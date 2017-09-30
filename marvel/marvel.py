@@ -64,7 +64,7 @@ class Marvel(object):
         
         :returns:  str -- URL encoded query parameters
         """
-        return urllib.urlencode(params)
+        return urllib.parse.urlencode(params)
 
     def _auth(self):
         """
